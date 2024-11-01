@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('back.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    min-height: 10vh;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: grey;
+    color: #fff;
+}
+header .logo h1 {
+    font-size: 24px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav ul li {
+    margin-left: 20px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+main {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 25vh;
+}
+.sign-in-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+}
+.sign-in-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.sign-in-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-align: left;
+}
+.sign-in-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.sign-in-container button {
+    background-color: grey;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+.sign-in-container button:hover {
+    background-color: darkgrey;
+}
+footer {
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 16px;
+}
+footer p {
+    margin: 0;
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .content-wrapper {
+        flex-direction: column;
+    }
+    .image-section,
+    .text-section {
+        width: 50%;
+        margin-left: 0;
+    }
+    .text-section {
+        margin-top: 20px;
+    }
+    .abilities-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .ability {
+        margin-bottom: 0px;
+    }
+}

@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('back.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    min-height: 10vh;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: grey;
+    color: #fff;
+}
+header .logo h1 {
+    font-size: 24px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav ul li {
+    margin-left: 20px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+main {
+    padding: 40px;
+}
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 50px;
+    border-radius: 20px;
+}
+.image-section img {
+    max-width: 30%;
+    height: auto;
+    border-radius: 20px;
+    margin-right: 30px;
+}
+.text-section {
+    max-width: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.text-section h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.text-section p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: white;
+}
+.abilities-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.ability {
+    text-align: center;
+    max-width: 200px;
+}
+.ability img {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+}
+.ability p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: white;
+}
+footer {
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 16px;
+}
+footer p {
+    margin: 0;
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .content-wrapper {
+        flex-direction: column;
+    }
+    .image-section,
+    .text-section {
+        width: 50%;
+        margin-left: 0;
+    }
+    .text-section {
+        margin-top: 20px;
+    }
+    .abilities-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .ability {
+        margin-bottom: 0px;
+    }
+}
